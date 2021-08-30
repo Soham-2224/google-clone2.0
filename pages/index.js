@@ -30,26 +30,21 @@ export default function Home() {
       </Head>
 
       <header className="flex justify-between w-full p-5 text-sm text-gray-700">
-        {/* left */}
         <div className="flex space-x-4 items-center">
           <p className="link">About</p>
           <p className="link">Store</p>
         </div>
 
-        {/* right */}
         <div className="flex space-x-4 items-center">
           <p className="link">Gmail</p>
           <p className="link">Images</p>
 
-          {/* Icon */}
           <ViewGridIcon className="h-10 w-10 p-2 cursor-pointer rounded-full hover:bg-gray-100 " />
 
-          {/* Avatar */}
           <Avatar url="https://pbs.twimg.com/profile_images/1343631434318278659/bAOuV9MH.jpg" />
         </div>
       </header>
 
-      {/* Body */}
       <form className="flex flex-col items-center w-4/5 justify-center flex-1">
         <Image 
           src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
@@ -70,7 +65,6 @@ export default function Home() {
         </div>
       </form>
 
-      {/* Footer */}
       <Footer />
     </div>
   )
