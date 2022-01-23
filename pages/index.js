@@ -26,13 +26,7 @@ export default function Home() {
    const { data: session } = useSession();
    const getIn = () => signIn();
    if (!session) {
-      return (
-         // <>
-         //    Not signed in <br />
-         //    <button onClick={getIn}>Sign in</button>
-         // </>
-         <Login />
-      );
+      return <Login />;
    } else {
       return (
          <div className="flex flex-col items-center justify-center h-screen">

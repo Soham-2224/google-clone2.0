@@ -25,7 +25,7 @@ function Header() {
                src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
                height={40}
                width={120}
-               alt=""
+               alt="google logo"
                onClick={() => router.push("/")}
                className="cursor-pointer"
             />
@@ -45,10 +45,7 @@ function Header() {
                   Search
                </button>
             </form>
-            <Avatar
-               className="ml-auto"
-               url="https://www.redwolf.in/image/cache/catalog/artwork-Images/mens/iron-man-mask-design-image'-700x700.png"
-            />
+            <Avatar className="ml-auto mt-3 hidden md:block" />
          </div>
          <HeaderOptions />
       </header>
