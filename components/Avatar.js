@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { useSession, signOut } from "next-auth/react";
+import Image from 'next/image';
+import { useSession, signOut } from 'next-auth/react';
 
 function Avatar({ className }) {
    const { data: session } = useSession();
@@ -7,7 +7,6 @@ function Avatar({ className }) {
    return (
       <div className="flex flex-col group">
          <img
-            loading="lazy"
             src={session?.user?.image}
             onClick={getOut}
             alt="Profile pic"
